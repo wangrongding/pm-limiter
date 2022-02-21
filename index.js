@@ -18,7 +18,7 @@ if (process.argv.length < 3) {
     boxen(
       `${chalk.bold.red(
         "请在scripts中设置你要限制的包管理器: "
-      )}"preinstall":"limit [npm|yarn|...]"`,
+      )}"preinstall":"npx npm-limit [npm|yarn|...]"`,
       {
         title: "Error!",
         titleAlignment: "center",

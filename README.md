@@ -28,6 +28,6 @@ npm set-script preinstall "npx npm-limit yarn"
 
 当我们没有设置`"preinstall": "npx npm-limit [你要设置的包管理器名称yarn,npm,pnpm...]"`或者设置错误的时候,可以看到如下图所示的报错信息
 
-![](https://gitee.com/wangrongding/image-house/raw/master/images/202202211341051.png)
+![](https://gitee.com/wangrongding/image-house/raw/master/images/202202211642694.png)
 
 至此,包管理器的限制就可以实现啦 ~ 🥰
