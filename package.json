@@ -1,0 +1,29 @@
+{
+  "name": "install-limiter",
+  "version": "1.0.0",
+  "description": "Limit the use of specific package manager:npm,cnpm,yarn,pnpm...",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "limit": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "cnpm",
+    "yarn",
+    "pnpm",
+    "package",
+    "manager",
+    "limit",
+    "limiter"
+  ],
+  "author": "wangrongding",
+  "license": "ISC",
+  "dependencies": {
+    "boxen": "^6.2.1",
+    "chalk": "^5.0.0"
+  }
+}
