@@ -1,5 +1,5 @@
 {
-  "name": "pm-limit",
+  "name": "npm-limit",
   "version": "1.0.0",
   "description": "Limit the use of specific package manager:npm,cnpm,yarn,pnpm...",
   "type": "module",
@@ -20,7 +20,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/wangrongding/pm-limit.git"
+    "url": "https://github.com/wangrongding/npm-limit.git"
   },
   "author": "wangrongding <wangrongding@qq.com>",
   "license": "ISC",
