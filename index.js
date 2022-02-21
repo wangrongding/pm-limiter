@@ -33,9 +33,11 @@ if (process.argv.length < 3) {
 if (usedPM != process.argv[2]) {
   console.log(
     boxen(
-      `您正在是用的包管理工具是:${chalk.bold.red(
+      `您正在使用 ${chalk.bold.red(
         usedPM == "npminstall" ? "cnpm" : usedPM
-      )}\n您只能用 ${chalk.bold.green(process.argv[2])} 来安装本项目的依赖!`,
+      )} 安装依赖!\n在该项目中,您只能用 ${chalk.bold.green(
+        process.argv[2]
+      )} 的命令来安装依赖!`,
       {
         title: "Error!",
         titleAlignment: "center",

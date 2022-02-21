@@ -1,6 +1,6 @@
 {
   "name": "npm-limit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Limit the use of specific package manager:npm,cnpm,yarn,pnpm...",
   "type": "module",
   "main": "index.js",
