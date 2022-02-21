@@ -18,6 +18,16 @@ yarn add install-limiter -D
 npm set-script preinstall "limit yarn"
 ```
 
+或者手动添加 👇
+
+```json
+{
+  "scripts": {
+    "preinstall": "limit yarn"
+  }
+}
+```
+
 ## 示例
 
 当我们设置了上述的 script 后,执行 `pnpm i` 可以看到如下图所示的报错信息
