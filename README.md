@@ -1,13 +1,5 @@
 # npm-limit
 
-## 安装:
-
-```sh
-npm i npm-limit -D
-# or
-yarn add npm-limit -D
-```
-
 ## 使用方法
 
 为了让其他人在此项目中只能通过我们指定的包管理器去安装依赖，我们需要在 `package.json` 里面添加一条脚本`"preinstall": "npx npm-limit [你要设置的包管理器名称yarn,npm,pnpm...]"`
