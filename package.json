@@ -1,12 +1,10 @@
 {
-  "name": "install-limiter",
+  "name": "pm-limit",
   "version": "1.0.0",
   "description": "Limit the use of specific package manager:npm,cnpm,yarn,pnpm...",
   "type": "module",
   "main": "index.js",
-  "bin": {
-    "limit": "index.js"
-  },
+  "bin": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,7 +18,11 @@
     "limit",
     "limiter"
   ],
-  "author": "wangrongding",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wangrongding/pm-limit.git"
+  },
+  "author": "wangrongding <wangrongding@qq.com>",
   "license": "ISC",
   "dependencies": {
     "boxen": "^6.2.1",
