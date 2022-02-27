@@ -1,6 +1,6 @@
 {
   "name": "npm-limit",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Limit the use of specific package manager:npm,cnpm,yarn,pnpm...",
   "type": "module",
   "main": "index.js",
@@ -18,11 +18,17 @@
     "limit",
     "limiter"
   ],
+  "author": {
+    "name": "wangrongding",
+    "email": "wangrongding@qq.com",
+    "url": "https://www.fedtop.com/"
+  },
+  "homepage": "https://github.com/wangrongding/npm-limit/",
   "repository": {
     "type": "git",
     "url": "https://github.com/wangrongding/npm-limit.git"
   },
-  "author": "wangrongding <wangrongding@qq.com>",
+  "bugs": "https://github.com/wangrongding/npm-limit/issues",
   "license": "ISC",
   "dependencies": {
     "boxen": "^6.2.1",
