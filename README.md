@@ -31,7 +31,7 @@ npm set-script preinstall "npx npm-limit yarn"
 
 ![](https://gitee.com/wangrongding/image-house/raw/master/images/202202211343554.png)
 
-当我们没有设置`"preinstall": "npx npm-limit [你要设置的包管理器名称yarn,npm,pnpm...]"`或者设置错误的时候,可以看到如下图所示的报错信息
+当我们没有设置npm-limit后的参数`"preinstall": "npx npm-limit null|xxx"`或者设置错误的时候,可以看到如下图所示的报错信息
 
 ![](https://gitee.com/wangrongding/image-house/raw/master/images/202202211642694.png)
 
