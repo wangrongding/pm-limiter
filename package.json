@@ -1,12 +1,13 @@
 {
-  "name": "npm-limit",
-  "version": "1.0.5",
+  "name": "pm-limiter",
+  "version": "0.0.2",
   "description": "Limit the use of specific package manager:npm,cnpm,yarn,pnpm...",
   "type": "module",
   "main": "index.js",
   "bin": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx pm-limiter pnpm"
   },
   "keywords": [
     "npm",
@@ -23,12 +24,12 @@
     "email": "wangrongding@qq.com",
     "url": "https://www.fedtop.com/"
   },
-  "homepage": "https://github.com/wangrongding/npm-limit/",
+  "homepage": "https://github.com/wangrongding/pm-limiter/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wangrongding/npm-limit.git"
+    "url": "https://github.com/wangrongding/pm-limiter.git"
   },
-  "bugs": "https://github.com/wangrongding/npm-limit/issues",
+  "bugs": "https://github.com/wangrongding/pm-limiter/issues",
   "license": "ISC",
   "dependencies": {
     "boxen": "^6.2.1",

@@ -1,4 +1,4 @@
-# npm-limit
+# pm-limiter
 
 一个 node 包管理器的约束工具，用于协同项目的统一规范。
 
@@ -9,7 +9,7 @@
 使用以下命令快速添加 👇
 
 ```sh
-npm set-script preinstall "npx npm-limit yarn"
+npm set-script preinstall "npx pm-limiter yarn"
 ```
 
 或者手动添加 👇
@@ -18,12 +18,12 @@ npm set-script preinstall "npx npm-limit yarn"
 // package.json
 {
   "scripts": {
-    "preinstall": "npx npm-limit yarn"
+    "preinstall": "npx pm-limiter yarn"
   }
 }
 ```
 
-为了让其他人在此项目中只能通过我们指定的包管理器去安装依赖，我们需要在 `package.json` 里面添加一条脚本`"preinstall": "npx npm-limit [你要设置的包管理器名称yarn,npm,pnpm...]"`
+为了让其他人在此项目中只能通过我们指定的包管理器去安装依赖，我们需要在 `package.json` 里面添加一条脚本`"preinstall": "npx pm-limiter [你要设置的包管理器名称yarn,npm,pnpm...]"`
 
 ## 示例
 
@@ -31,7 +31,7 @@ npm set-script preinstall "npx npm-limit yarn"
 
 ![](https://gitee.com/wangrongding/image-house/raw/master/images/202202211343554.png)
 
-当我们没有设置npm-limit后的参数`"preinstall": "npx npm-limit null|xxx"`或者设置错误的时候,可以看到如下图所示的报错信息
+当我们没有设置pm-limiter后的参数`"preinstall": "npx pm-limiter null|xxx"`或者设置错误的时候,可以看到如下图所示的报错信息
 
 ![](https://gitee.com/wangrongding/image-house/raw/master/images/202202211642694.png)
 

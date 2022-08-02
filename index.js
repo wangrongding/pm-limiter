@@ -3,6 +3,7 @@
 // "use strict";
 import boxen from "boxen";
 import chalk from "chalk";
+import rimraf from "rimraf";
 
 // npminstall:cnpm | npm | yarn | pnpm
 
@@ -17,7 +18,7 @@ if (process.argv.length < 3) {
     boxen(
       `${chalk.bold.red(
         "请在scripts中设置你要限制的包管理器: "
-      )}"preinstall":"npx npm-limit [npm|yarn|...]"`,
+      )}"preinstall":"npx pm-limiter [npm|yarn|...]"`,
       {
         title: "Error!",
         titleAlignment: "center",
@@ -30,6 +31,10 @@ if (process.argv.length < 3) {
   process.exit(1);
 }
 if (usedPM != process.argv[2]) {
+  // 删除当前目录下未成功安装的node_modules文件夹
+  rimraf("./node_modules", function (err) {
+    console.log(err);
+  });
   console.log(
     boxen(
       `您正在使用 ${chalk.bold.red(
