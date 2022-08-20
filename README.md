@@ -29,10 +29,10 @@ npm set-script preinstall "npx pm-limiter yarn"
 
 当我们设置了上述的 script 后,执行 `pnpm i` 可以看到如下图所示的报错信息
 
-![](https://gitee.com/wangrongding/image-house/raw/master/images/202202211343554.png)
+![](https://assets.fedtop.com/picbed/202208201603720.png)
 
 当我们没有设置pm-limiter后的参数`"preinstall": "npx pm-limiter null|xxx"`或者设置错误的时候,可以看到如下图所示的报错信息
 
-![](https://gitee.com/wangrongding/image-house/raw/master/images/202202211642694.png)
+![](https://assets.fedtop.com/picbed/202208201603512.png)
 
 至此,包管理器的限制就可以实现啦 ~ 🥰
