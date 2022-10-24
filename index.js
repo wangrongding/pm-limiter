@@ -31,8 +31,6 @@ if (process.argv.length < 3) {
 }
 
 if (specifiedPM != process.argv[2]) {
-  isExistThanRemove("./node_modules");
-  removeGarbage(specifiedPM);
   console.log(
     boxen(
       `您正在使用 ${chalk.bold.red(
@@ -51,6 +49,28 @@ if (specifiedPM != process.argv[2]) {
   );
   process.exit(1);
 }
+
+// if (specifiedPM != process.argv[2]) {
+//   isExistThanRemove("./node_modules");
+//   removeGarbage(specifiedPM);
+//   console.log(
+//     boxen(
+//       `您正在使用 ${chalk.bold.red(
+//         specifiedPM == "npminstall" ? "cnpm" : specifiedPM
+//       )} 安装依赖!\n在该项目中,您只能用 ${chalk.bold.green(
+//         process.argv[2]
+//       )} 的命令来安装依赖!`,
+//       {
+//         title: "Error!",
+//         titleAlignment: "center",
+//         borderColor: "red",
+//         borderStyle: "arrow",
+//         padding: 1,
+//       }
+//     )
+//   );
+//   process.exit(1);
+// }
 
 function removeGarbage(specifiedPM) {
   specifiedPM = "pnpm";
@@ -77,13 +97,16 @@ function removeGarbage(specifiedPM) {
 }
 
 function isExistThanRemove(path) {
+  console.log("🚀🚀🚀 / path", path);
   try {
     if (fs.existsSync(path)) {
-      rimraf(path, function (err) {});
+      rimraf(path, (err) => {
+        console.log("🚀🚀🚀 / err", err);
+      });
       return true;
     }
   } catch (err) {
-    // console.log("🚀🚀🚀 / err", err);
+    console.log("🚀🚀🚀 / err", err);
   }
   // console.log("🚀🚀🚀 / true", path, "不存在");
   return false;

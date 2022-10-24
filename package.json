@@ -1,13 +1,12 @@
 {
   "name": "pm-limiter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Limit the use of specific package manager:npm,cnpm,yarn,pnpm...",
   "type": "module",
   "main": "index.js",
   "bin": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "npx pm-limiter pnpm"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "npm",
